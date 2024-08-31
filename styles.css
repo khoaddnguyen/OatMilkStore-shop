@@ -1,0 +1,143 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: "Space Mono", monospace;
+     font-size:12px;
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 40px;
+  margin: 10px;
+}
+
+
+.position-fixed {
+    position: fixed
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.nav-container {
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.nav-container a {
+    text-decoration: none !important;
+    color: black
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-and-list {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+  padding: 80px;
+  padding-left: 0px;
+  width: 100%
+}
+
+.menu {
+  order: -1;
+}
+
+.menu li {
+  display: block;
+  text-decoration: none;
+  padding-left: 10px;
+  line-height: 2rem;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding-left: 10px;
+ }
+
+
+.grid-container {
+ display: grid;
+ grid-template-columns: repeat(2, 400px);
+ grid-template-rows: repeat(8, 400px);
+ gap: 5px;
+}
+
+.grid-item {
+  width: 100%;
+  margin-bottom: 20px; /* Gap between rows */
+}
+
+img {
+  width: 70%;
+  height: auto;
+  display: block;
+}
+
+.hover-container {
+      position: relative;
+      display: block;
+}
+
+.hover-container img {
+      position: absolute;
+      transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+
+.top-img {
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.top-img:hover {
+    opacity: 1;
+}
+
+@media (max-width: 770px) {
+      body .grid-container{
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 8fr;
+      }
+    }
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+#menu {
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding-left: 17px
+}
+
+#footer-content {
+  background: white;
+  color: black
+}
+
+
